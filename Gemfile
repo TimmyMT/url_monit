@@ -10,6 +10,10 @@ gem 'redis-rails'
 gem 'foreman'
 gem 'whenever', require: false
 gem 'sidekiq'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'mini_racer'
+gem 'slim-rails'
 # ======================
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
@@ -40,6 +44,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
+  gem 'pry-rails'
 end
 
 group :development do
