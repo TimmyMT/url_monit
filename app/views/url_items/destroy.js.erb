@@ -1,0 +1,3 @@
+<% unless @url_item.persisted? %>
+  $("#item_<%= @url_item.id %>").remove();
+<% end %>

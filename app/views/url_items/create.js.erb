@@ -1,0 +1,7 @@
+<% if @url_item.persisted? %>
+  $(".content").empty();
+  $(".content").html('<%= render 'url_items/partials/url_items', url_items: @url_items %>')
+<% else %>
+  $(".content").prepend('<%= render 'url_items/partials/errors', errors: @errors %>')
+  $(".content").prepend(`<br>`)
+<% end %>

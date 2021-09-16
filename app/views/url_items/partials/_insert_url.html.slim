@@ -1,0 +1,5 @@
+= form_tag url_items_path, method: :post, remote: true do
+  div class="col-7"
+    = text_field_tag :url, nil, class: "form-control fifty-width"
+    br
+    = submit_tag "request URL", class: "btn btn-outline-info"
