@@ -5,6 +5,8 @@ class PingUrlItem
     response_time = (Time.current - started_timer).seconds
 
     update_url_item(url_item, response_time)
+  rescue OpenSSL::SSL::SSLError
+    url_item.update(listening: false)
   end
 
   private
