@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_09_16_121239) do
   create_table "url_items", force: :cascade do |t|
     t.string "url", null: false
     t.boolean "active", default: false, null: false
-    t.text "delay", default: [], array: true
+    t.text "response_times", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["url"], name: "index_url_items_on_url", unique: true
